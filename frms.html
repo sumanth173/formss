@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Software Engineer</h1>
+        <h3>Application Form</h3>
+        <label for="first">Full Name <span style="color: red;">*</span></label><br>
+        <input type="text" name="first" id="first" required><br><br/>
+        <label for="doe">Date Of Birth <span style="color: red;">*</span></label><br>
+        <input type="date" name="doe" id="doe" required><br><br/>
+        <label for="mail">Email<span style="color: red;">*</span></label><br>
+        <input type="email" name="email" id="email" required><br><br/>
+        <label for="Contact">Contact <span style="color: red;">*</span></label><br>
+        <input type="tel" minlength="10" maxlength="10" name="Contact" id="Contact" required><br><br/>
+        <h3>Education Details</h3>
+        <label for="education">Degree</label><br>
+        <input list="degrees" name="education" id="education" required/>
+        <datalist id="degrees">
+            <option value="B/BTECH"></option>
+            <option value="MCA/MBA"></option>
+            <option value="BA/BCOM/BSC/BCA"></option>
+            <option value="MTECH"></option>
+            <option value="OTHERS"></option>
+
+        </datalist><br><br/>
+
+        <label for="brances">Branch</label><br>
+        <input list="branch" name="branches" id="branches" required/>
+        <datalist id="branch">
+            <option value="CSE"></option>
+            <option value="ECE"></option>
+            <option value="EEE"></option>
+            <option value="DATA SCIENCE"></option>
+            <option value="IT"></option>
+            <option value="OTHERS"></option>
+        </datalist><br><br/>
+        <label for="po">  Passed out</label><br>
+        <input type="month" name="po" id="po" required><br><br/>
+        <label for="">CGPA</label><br>
+        <input type="number" step="0.01" minlength="0" maxlength="10" required><br><br/>
+        <h3>    Work experience, if any</h3>
+        <label for="con">Current Organisation Name</label><br>
+        <input type="text" name="con" id="con"><br><br>
+        <label for="ro">Role</label><br>
+        <input type="text" name="ro" id="ro"><br><br/>
+        <label for="noticeperiod">Notice Period</label><br>
+        <input list="notice" name="noticeperiod" id="noticeperiod"><br><br/>
+        <datalist id="notice">
+            <option value="0 days"></option>
+            <option value="5 days"></option>
+            <option value="10 days"></option>
+            <option value="15 days"></option>
+            <option value="Immediately"></option>
+        </datalist>
+        <label for="file">Upload your resume <span style="color:red">*</span></label><br>
+        <input type="file" name="file" id="file" required><br><br/>
+
+        <label for="files">Upload your cv <span style="color:red">*</span></label><br>
+        <input type="file" name="files" id="files" required> <br><br>
+
+        <input type="submit">
+        
+
+    </form>
+</body>
+</html>
